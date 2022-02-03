@@ -1,0 +1,22 @@
+version: '3'
+services:
+  db:
+    image: postgres:10.10
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: keshav-ubuntu
+      POSTGRES_PASSWORD: keshav-ubuntu
+      POSTGRES_DB: geo_location_db
+    volumes:
+      - ../database_geo_location_dev/data:/var/lib/postgresql/data
+  api:
+    build: ../geo-location-api/
+    image: geo-location-api:geo-location-v1
+    volumes:
+      - ../geo-location-api/:/geo-location-app/
+    ports:
+      - "3001:3000"
+    command: bash -c "./wait-for-postgres.sh db bundle exec rails server -b 0.0.0.0 -e development"
+    depends_on:
+      - db

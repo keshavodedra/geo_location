@@ -1,0 +1,42 @@
+AllCops:
+  Excludes:
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'script/**/*'
+    - 'bin/**/*'
+  SuggestExtensions: false
+
+Lint/MissingSuper:
+  Exclude:
+    - 'app/services/**/*'
+    - 'lib/error/*'
+
+Style/Documentation:
+  Enabled: true
+
+Layout/EmptyLineAfterMagicComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 150
+
+Metrics/MethodLength:
+  Max: 50
+
+Metrics/AbcSize:
+  Max: 50
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+  Max: 50
+
+Metrics/CyclomaticComplexity:
+  Max: 30
+
+Metrics/PerceivedComplexity:
+  Max: 30
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+

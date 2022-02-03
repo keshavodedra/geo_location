@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: keshav-ubuntu
+  password: keshav-ubuntu
+  host: db
+  port: 5432
+
+development:
+  <<: *default
+  database: geo_location_api_development
+  
+test:
+  <<: *default
+  database: geo_location_api_test
+
+production:
+  <<: *default
+  database: geo_location_api_production
+  username: geo_location_api
+  password: <%= ENV["GEO_LOCATION_API_DATABASE_PASSWORD"] %>
