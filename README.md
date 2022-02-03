@@ -1,16 +1,22 @@
 # README
 
---------------------- Environment --------------------------------- 
+# Environment
 
 Ruby 3.1.0
+
 Rails 7.0.1
+
 PostgreSql
+
 RSpec
+
 JSON::API
+
 Rubocop
+
 Docker
 
---------------------- Overview -----------------------------------
+# Overview
 
 - Testing Task -  Ruby API - Geolocation with external integration.
 
@@ -27,36 +33,36 @@ Docker
 
   by just creating new service class and jst define this new class to main GeoLocatorService service.
 
---------------------- API Endpoints Example -----------------------
+# API Endpoints
 
 - Get a list of geo-locations using paginatin
-	GET: localhost:3001/api/geo_locations?page[size]=5&page[number]=1
+GET: localhost:3001/api/geo_locations?page[size]=5&page[number]=1
 
 - Get a list of geo-locations using ip-address
-	GET: localhost:3001/api/geo_locations?filter[ip_address_eq]=2.49.80.142
+GET: localhost:3001/api/geo_locations?filter[ip_address_eq]=2.49.80.142
 
 - Get a list of all geo-locations
-	GET: localhost:3001/api/geo_locations?all = true
+GET: localhost:3001/api/geo_locations?all = true
 
 - Get a list of geo-locations based on current ip address
-	GET: localhost:3001/api/geo_locations
+GET: localhost:3001/api/geo_locations
 
 - Post/Create geo-locations based on current ip address
-	POST: localhost:3001/api/geo_locations
+POST: localhost:3001/api/geo_locations
 
 - Delete geo-locations based on id
-	DELETE: localhost:3001/api/geo_locations/:1 (delete)
+DELETE: localhost:3001/api/geo_locations/:1 (delete)
 
 - Delete geo-locations based on current ip address
-	DELETE: localhost:3001/api/geo_locations/delete_my_locations (delete)
+DELETE: localhost:3001/api/geo_locations/delete_my_locations (delete)
 
 
------------------------TO DO --------------------------------------
+# ToDo
 
 - We can implement Users functionality by using Devise GEM.
 - So We can make out API secure and only authenticate user can use these endpoints and we can store Geo-locations by UserId
 
-------------------------RUN----------------------------------------
+# RUN
 
 - git clone of the project
 
@@ -71,7 +77,7 @@ Docker
 - systemctl stop postgresql (Only if postgres is already listening on the same port)
 
 
------------------- API Documentation ------------------------------
+# API-Documentation
 
 https://documenter.getpostman.com/view/7436287/UVeFNmn8
 
