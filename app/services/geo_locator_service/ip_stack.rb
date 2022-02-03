@@ -4,7 +4,7 @@ module GeoLocatorService
   class IpStack < ApplicationService
     # We can store and read this value from credentials.yml file.
     URL = 'http://api.ipstack.com/'.freeze
-    ACCESS_KEY = '2810b7314e81e2841dccb720876f9b19'.freeze
+    ACCESS_KEY = '0db2b08dc8fdafd9a9235df79be59f65'.freeze
 
     attr_reader :ip_address
 

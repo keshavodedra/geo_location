@@ -27,11 +27,15 @@ Docker
 
 - You can delete a geo-location by id or by current ip.
 
-- Ip Address will be tracked automatically by application for post or delete all my data.
+- Ip Address will be tracked automatically by the application.
 
 - This project is flexible and scalable like, we can use other 3rd party API service
 
   by just creating new service class and jst define this new class to main GeoLocatorService service.
+
+- It has a RESTful API
+
+- Geolocation module has been written in the way that in the future it should be easy to change the service provider.
 
 # API Endpoints
 
@@ -60,7 +64,7 @@ DELETE: localhost:3001/api/geo_locations/delete_my_locations (delete)
 # ToDo
 
 - We can implement Users functionality by using Devise GEM.
-- So We can make out API secure and only authenticate user can use these endpoints and we can store Geo-locations by UserId
+- So We can make our API secure and only authenticate user can use these endpoints and we can store Geo-locations by UserId
 
 # RUN
 

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-03T12:40:46+00:00">2022-02-03T12:40:46+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-02-03T13:54:45+00:00">2022-02-03T13:54:45+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -216,7 +216,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ad98546570a08491000246feac34911f78d7ea19" class="src_link" title="spec/models/geo_location_spec.rb">spec/models/geo_location_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">24</td>
+            <td class="cell--number">23</td>
             <td class="cell--number">13</td>
             <td class="cell--number">13</td>
             <td class="cell--number">0</td>
@@ -227,7 +227,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3b24ea885d0cafe5f3808ad58ec44ca32f2b77e1" class="src_link" title="spec/serializers/geo_location_serializer_spec.rb">spec/serializers/geo_location_serializer_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">14</td>
+            <td class="cell--number">12</td>
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
@@ -681,7 +681,7 @@
 
             
 
-            <code class="ruby">      my_locations.destroy_all</code>
+            <code class="ruby">      my_locations.delete_all</code>
           </li>
         </div>
       
@@ -3592,7 +3592,7 @@
 
             
 
-            <code class="ruby">  before(:each) { </code>
+            <code class="ruby">  before(:each) do</code>
           </li>
         </div>
       
@@ -3614,7 +3614,7 @@
 
             
 
-            <code class="ruby">  }</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3636,40 +3636,40 @@
 
             
 
-            <code class="ruby">  describe &quot;geo location&quot; do</code>
+            <code class="ruby">  describe &#39;geo location&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
+          <li class="covered" data-hits="1" data-linenumber="7">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    before(:each) { </code>
+            <code class="ruby">    before(:each) do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="9">
+          <li class="covered" data-hits="2" data-linenumber="8">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">      FactoryBot.create(:geo_location, payload: JSON.parse(&#39;{&quot;val&quot;:&quot;test&quot;,&quot;val1&quot;:&quot;test1&quot;,&quot;val2&quot;:&quot;test2&quot;}&#39;), ip_address: IpAddressService::FindMyIp.call)</code>
+            <code class="ruby">      FactoryBot.create(:geo_location, payload: JSON.parse(&#39;{&quot;val&quot;:&quot;test&quot;,&quot;val1&quot;:&quot;test1&quot;,&quot;val2&quot;:&quot;test2&quot;}&#39;),</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">                                       ip_address: IpAddressService::FindMyIp.call)</code>
           </li>
         </div>
       
@@ -3691,7 +3691,7 @@
 
             
 
-            <code class="ruby">    }</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -3713,7 +3713,7 @@
 
             
 
-            <code class="ruby">    it &quot;my_geo_locations&quot; do</code>
+            <code class="ruby">    it &#39;my_geo_locations&#39; do</code>
           </li>
         </div>
       
@@ -3768,7 +3768,7 @@
 
             
 
-            <code class="ruby">    it &quot;my_geo_locations&quot; do</code>
+            <code class="ruby">    it &#39;my_geo_locations&#39; do</code>
           </li>
         </div>
       
@@ -3812,23 +3812,12 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -3887,18 +3876,18 @@
 
             
 
-            <code class="ruby">  describe &quot;geo location&quot; do</code>
+            <code class="ruby">  describe &#39;geo location&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">    it &#39;my_geo_location data from serializer&#39; do</code>
           </li>
         </div>
       
@@ -3909,7 +3898,7 @@
 
             
 
-            <code class="ruby">    it &quot;my_geo_location data from serializer&quot; do</code>
+            <code class="ruby">      @geo_location = FactoryBot.create(:geo_location, payload: JSON.parse(&#39;{&quot;val&quot;:&quot;test&quot;,&quot;val1&quot;:&quot;test1&quot;,&quot;val2&quot;:&quot;test2&quot;}&#39;), ip_address: &#39;1.2.3.4&#39;)</code>
           </li>
         </div>
       
@@ -3920,7 +3909,7 @@
 
             
 
-            <code class="ruby">      @geo_location = FactoryBot.create(:geo_location, payload: JSON.parse(&#39;{&quot;val&quot;:&quot;test&quot;,&quot;val1&quot;:&quot;test1&quot;,&quot;val2&quot;:&quot;test2&quot;}&#39;), ip_address: &#39;1.2.3.4&#39;)</code>
+            <code class="ruby">      @serializer = GeoLocationSerializer.new(@geo_location)</code>
           </li>
         </div>
       
@@ -3931,7 +3920,7 @@
 
             
 
-            <code class="ruby">      @serializer = GeoLocationSerializer.new(@geo_location)</code>
+            <code class="ruby">      serialized_data = JSON.parse(@serializer.to_json)[&#39;data&#39;]</code>
           </li>
         </div>
       
@@ -3942,7 +3931,7 @@
 
             
 
-            <code class="ruby">      serialized_data =  JSON.parse(@serializer.to_json)[&#39;data&#39;]</code>
+            <code class="ruby">      serialized_data_attr = serialized_data[&#39;attributes&#39;]</code>
           </li>
         </div>
       
@@ -3953,7 +3942,7 @@
 
             
 
-            <code class="ruby">      serialized_data_attr =  serialized_data[&#39;attributes&#39;]</code>
+            <code class="ruby">      expect(serialized_data[&#39;id&#39;].to_i).to eq(@geo_location[&#39;id&#39;].to_i)</code>
           </li>
         </div>
       
@@ -3964,23 +3953,12 @@
 
             
 
-            <code class="ruby">      expect(serialized_data[&#39;id&#39;].to_i).to eq(@geo_location[&#39;id&#39;].to_i)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
-            <span class="hits">1</span>
-            
-
-            
-
             <code class="ruby">      expect(serialized_data_attr[&#39;ip_address&#39;]).to eq(&#39;1.2.3.4&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
+          <li class="never" data-hits="" data-linenumber="10">
             
             
 
@@ -3991,18 +3969,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="11">
             
             
 
@@ -4013,7 +3980,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="12">
             
             
 
