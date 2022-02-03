@@ -34,7 +34,7 @@ module Api
 
     # DELETE /delete_my_locations
     def delete_my_locations
-      my_locations.destroy_all
+      my_locations.delete_all
       render nothing: true, status: :no_content
     end
 
