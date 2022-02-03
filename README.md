@@ -76,6 +76,8 @@ DELETE: localhost:3001/api/geo_locations/delete_my_locations (delete)
 
 - systemctl stop postgresql (Only if postgres is already listening on the same port)
 
+- get inside the container of api (sudo docker exec -it geo-location-api_api_1 bash) and run rake db:migrate
+
 
 # API-Documentation
 
