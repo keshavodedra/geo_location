@@ -5,7 +5,7 @@ module IpAddressService
   class FindMyIp < ApplicationService
     def call
       response = Net::HTTP.get(ip_address_url).squish
-      raise custom_error(ip_address_error_msg) unless response
+      raise custom_error(ip_address_error_msg) unless response.present?
 
       response
     end

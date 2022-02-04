@@ -14,7 +14,7 @@ module GeoLocatorService
 
     def call
       response = Net::HTTP.get(URI.parse(ip_stack_url)).squish
-      raise custom_error(no_response_error_msg) unless response
+      raise custom_error(no_response_error_msg) unless response.present?
       raise custom_error(invalid_req_error_msg) if JSON.parse(response)['error']
 
       {
