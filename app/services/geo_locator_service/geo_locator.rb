@@ -12,7 +12,7 @@ module GeoLocatorService
 
     def call
       @ip_address = find_my_ip unless Rails.env.production?
-      raise custom_error(ip_address_error_msg) unless ip_address.present??
+      raise custom_error(ip_address_error_msg) unless ip_address.present?
 
       geo_service_name.constantize.new(ip_address).call
     end
