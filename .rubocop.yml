@@ -1,6 +1,6 @@
 AllCops:
   NewCops: disable
-  Excludes:
+  Exclude:
     - 'config/**/*'
     - 'db/**/*'
     - 'script/**/*'
@@ -18,7 +18,7 @@ Style/Documentation:
 Layout/EmptyLineAfterMagicComment:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Max: 150
 
 Metrics/MethodLength:
