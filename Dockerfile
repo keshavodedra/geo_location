@@ -2,6 +2,7 @@ FROM ruby:3.1.0
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client cron && apt-get -y install graphviz
 RUN mkdir /geo-location-app
 WORKDIR /geo-location-app
+ENV EDITOR=code
 COPY Gemfile /geo-location-app/Gemfile
 COPY Gemfile.lock /geo-location-app/Gemfile.lock
 RUN gem install bundler:2.3.2

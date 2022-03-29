@@ -47,6 +47,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'rubocop'
   gem 'simplecov', require: false, group: :test
+  # security tools
+  gem 'brakeman'
+  gem 'bundler-audit'
 end
 
 group :development do
