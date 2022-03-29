@@ -5,6 +5,8 @@ AllCops:
     - 'db/**/*'
     - 'script/**/*'
     - 'bin/**/*'
+    -  vendor/bundle/**/*
+    -  vendor/**/*.rb
   SuggestExtensions: false
 
 Lint/MissingSuper:
